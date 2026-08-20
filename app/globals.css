@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --brand: #d31b1b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --font-sans: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-serif);
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.article-body p {
+  margin-bottom: 1.1em;
+  line-height: 1.75;
+}
+
+.article-body h2 {
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.article-body h3 {
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.article-body a {
+  color: var(--brand);
+  text-decoration: underline;
+}
